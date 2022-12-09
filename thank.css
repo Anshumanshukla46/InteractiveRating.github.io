@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 30px;
+    background-color: #202731;
+    height: 290px;
+    width: 290px;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+.image {
+    text-align: center;
+}
+
+#rating {
+    width: fit-content;
+    height: fit-content;
+    background-color: #262f38;
+    text-align: center;
+    margin: auto;
+    color: #a36136;
+
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#title {
+    text-align: center;
+}
+
+
+#descip {
+    font-size: medium;
+    margin-top: -15px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+}

@@ -1,94 +1,48 @@
+
 let one = document.getElementById('one');
 let two = document.getElementById('two');
 let three = document.getElementById('three');
 let four = document.getElementById('four');
 let five = document.getElementById('five');
 
-// one.addEventListener('mouseover', changeOne());
 function changeOne() {
     one.style.backgroundColor = "hsl(25, 97%, 53%)";
     one.style.color = "white";
+
+    normal(two);
+    normal(three);
+    normal(four);
+    normal(five);
 }
 
-// one.addEventListener('mouseout', function () {
-//     normal(one);
-// })
-
-// function normal(x) {
-//     x.style.backgroundColor = "rgba(38, 47, 56, 255)";
-//     x.style.color = "#6c737c";
-// }
-
-// two.addEventListener('mouseover', function () {
-//     changeOne();
-//     changeTwo();
-// });
-
-// two.addEventListener('mouseout', function () {
-//     normal(one);
-//     normal(two);
-
-// });
+function normal(x) {
+    x.style.backgroundColor = "#263039";
+    x.style.color = "#676f7a";
+}
 
 function changeTwo() {
     two.style.backgroundColor = "hsl(25, 97%, 53%)";
     two.style.color = "white";
+
+    normal(three);
+    normal(four);
+    normal(five);
 }
-
-// three.addEventListener('mouseover', function () {
-//     changeOne();
-//     changeTwo();
-//     changeThree();
-// });
-
-// three.addEventListener('mouseout', function () {
-//     normal(one);
-//     normal(two);
-//     normal(three);
-
-// });
-
 
 function changeThree() {
     three.style.backgroundColor = "hsl(25, 97%, 53%)";
     three.style.color = "white";
+
+    normal(four);
+    normal(five);
 }
 
-// four.addEventListener('mouseover', function () {
-//     changeOne();
-//     changeTwo();
-//     changeThree();
-//     changeFour();
-// });
-
-
-// four.addEventListener('mouseout', function () {
-//     normal(one);
-//     normal(two);
-//     normal(three);
-//     normal(four);
-// });
 
 function changeFour() {
     four.style.backgroundColor = "hsl(25, 97%, 53%)";
     four.style.color = "white";
+    normal(five);
 }
-
-// five.addEventListener('mouseover', function () {
-//     changeOne();
-//     changeTwo();
-//     changeThree();
-//     changeFour();
-//     changeFive();
-// });
-
-// five.addEventListener('mouseout', function () {
-//     normal(one);
-//     normal(two);
-//     normal(three);
-//     normal(four);
-//     normal(five);
-// });
 
 
 function changeFive() {
@@ -96,23 +50,19 @@ function changeFive() {
     five.style.color = "white";
 }
 
-let num = 0;
 one.addEventListener('click', function () {
     changeOne();
-    num = 1;
 });
 
 two.addEventListener('click', function () {
     changeOne();
     changeTwo();
-    num = 2;
 });
 
 three.addEventListener('click', function () {
     changeOne();
     changeTwo();
     changeThree();
-    num = 3;
 });
 
 four.addEventListener('click', function () {
@@ -120,7 +70,6 @@ four.addEventListener('click', function () {
     changeTwo();
     changeThree();
     changeFour();
-    num = 4;
 });
 
 five.addEventListener('click', function () {
@@ -129,6 +78,4 @@ five.addEventListener('click', function () {
     changeThree();
     changeFour();
     changeFive();
-    num = 5;
 });
-

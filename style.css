@@ -11,6 +11,7 @@
 }
 
 body {
+    background-color: #141519;
     box-sizing: border-box;
     margin: 0px;
     /* background-color: hsl(216, 12%, 8%); */
@@ -23,8 +24,8 @@ body {
 main {
     padding: 30px;
     background-color: #202731;
-    height: 290px;
-    width: 290px;
+    height: 300px;
+    width: 300px;
     color: aliceblue;
 
     border-radius: 20px;
@@ -56,34 +57,60 @@ img {
     color: hsl(217, 12%, 63%);
 }
 
-#rating {
-    margin-top: 26px;
-}
-
-#one,
-#two,
-#three,
-#four,
-#five {
-    padding: 15px;
-    background-color: rgba(38, 47, 56, 255);
-    border-radius: 50%;
+.rating {
+    width: 300px;
+    /* height: 30px; */
     text-align: center;
-    /* margin: 50px; */
-    color: #6c737c;
-    height: 30px;
+    /* border: 2px solid white; */
+    /* margin-right: 100px; */
+}
+
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    /* display: inline-block; */
     width: 30px;
-    cursor: default;
+    height: 30px;
+    margin: 7px;
+    /* margin-left: 15px; */
+    /* background-color only for content */
+    /* background-clip: content-box; */
+    /* border: 2px solid #bbbbbb; */
+    background-color: #263039;
+    border-radius: 50%;
 }
 
 
-#two,
-#three,
-#four,
-#five {
-    margin-left: 20px;
+input[type="radio"]:focus {
+    /*no need, if you don't disable default appearance*/
+    outline: none;
+    /*to remove the square border on focus*/
 }
 
+input[type="radio"]:checked {
+
+    background-color: hsl(25, 97%, 53%);
+}
+
+input[type="radio"]:checked~span:first-of-type {
+    color: white;
+}
+
+label span:first-of-type {
+    position: relative;
+    left: -30px;
+    font-size: 15px;
+    color: #676f7a;
+}
+
+label span {
+    position: relative;
+    top: -17px;
+}
 
 button {
     background-color: hsl(25, 97%, 53%);
@@ -93,14 +120,10 @@ button {
     width: 300px;
     height: 50px;
 
-    /* padding-right: 140px;
-    padding-left: 140px; */
-
     font-size: large;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
-
 }
 
 a {

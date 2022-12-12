@@ -4,15 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
 
 
-
-  <title>Frontend Mentor | Interactive rating component</title>
+  <title>Interactive rating component</title>
 
   <link rel="stylesheet" href="style.css">
 
@@ -20,10 +18,8 @@
 
 <body>
 
-  <!-- Rating state start -->
-
-
   <main>
+
     <div id="star">
       <div id="circle">
         <img src="./images/icon-star.svg" alt="star">
@@ -40,16 +36,36 @@
       to help us improve our offering!
     </p>
 
-    <div id="rating">
+    <form action="./thank.js" class="rating">
+      <label>
+        <input type="radio" name="options" value="one" id="one" />
+        <span>1</span>
+      </label>
 
-      <span id="one">1</span>
-      <span id="two">2</span>
-      <span id="three">3</span>
-      <span id="four">4</span>
-      <span id="five">5</span>
 
-    </div>
+      <label>
+        <input type="radio" name="options" value="two" id="two" />
+        <span>2</span>
+      </label>
 
+
+      <label>
+        <input type="radio" name="options" value="three" id="three" />
+        <span>3</span>
+      </label>
+
+      <label>
+        <input type="radio" name="options" value="four" id="four" />
+        <span>4</span>
+      </label>
+
+      <label>
+        <input type="radio" name="options" value="five" id="five" />
+        <span>5</span>
+      </label>
+
+
+    </form>
     <br>
 
     <div class="submit">
@@ -59,22 +75,6 @@
     </div>
 
   </main>
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected -->
-  <!-- Add rating here out of 5 -->
-
-  <!-- Thank you! -->
-
-
-
-  <!-- Thank you state end -->
-
-
-
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

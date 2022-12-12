@@ -1,4 +1,18 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: auto;
+    margin-bottom: -35rem;
+    margin-left: -18.55rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
 body {
+    background-color: #141519;
     box-sizing: border-box;
     margin: 0px;
     min-height: 100vh;
